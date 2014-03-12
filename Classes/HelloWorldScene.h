@@ -14,6 +14,9 @@ public:
     
     // a selector callback
     void menuCloseCallback(Object* pSender);
+
+    void keyPressed(cocos2d::EventKeyboard::KeyCode keyCode, cocos2d::Event *event);
+	bool touchBegan(cocos2d::Touch* touch, cocos2d::Event* event);
     
     // implement the "static create()" method manually
     CREATE_FUNC(HelloWorld);
